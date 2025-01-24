@@ -34,37 +34,33 @@ sort(arr,arr+n);
 
 }
 
-
-//insertion sorting 
-
 /*
-int main(){
 
-    int n;
-    cin>>n;
-    int arr[n];
+287. Find the Duplicate Number
+Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 
-    for(int i =0;i<n;i++){
-        cin>>arr[i];
-    }
+There is only one repeated number in nums, return this repeated number.
+
+You must solve the problem without modifying the array nums and using only constant extra space.
+
+ 
 
 
-    for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            if(arr[i]>arr[j]){
-                swap(arr[i],arr[j]);
-               
-            }
-            else{
-                j++;
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+
+        for (int i = 0; i < nums.size() - 1; i++) {
+            if (nums[i] == nums[i + 1]) {
+                return nums[i]; 
             }
         }
 
-        
+        return -1;
     }
-    for(int i=0;i<n;i++){
-            cout<<arr[i]<<" ";
-        }
+};
 
-}
+
+
 */
