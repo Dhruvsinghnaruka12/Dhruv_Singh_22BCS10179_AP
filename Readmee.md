@@ -1,6 +1,3 @@
-#Demo
+#AP LAB 
 
-this is a demo file 
-
-
-lets see what happened 
+SEM 6 Leetcode questions 
